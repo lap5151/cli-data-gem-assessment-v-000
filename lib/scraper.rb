@@ -6,7 +6,12 @@ class Scraper
 
   def self.scrape_index_page(index_url = "https://www.theworlds50best.com/list/1-50-winners")
     doc = Nokogiri::HTML(open(index_url))
-    doc.css("div#t1-50 li")
+    results = doc.css("div#t1-50 li")
+    restaurants = []
+    results.each do |r|
+     restaurants << r 
+   end
+   restaurants
     binding.pry
   end
 
