@@ -9,7 +9,7 @@ class Scraper
     results = doc.css("div#t1-50 li")
     restaurants = []
     results.each do |r|
-     restaurants << r 
+     restaurants << r
    end
    restaurants
     binding.pry
