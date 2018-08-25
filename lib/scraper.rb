@@ -4,9 +4,9 @@ require 'pry'
 
 class Scraper
 
-require 'open-uri'
-if open('http://example.com/').read =~ /searchword/
-  # do something
+def 
+  open('https://www.tripadvisor.com/').read =~ /17701/
+  binding.pry
 end
 
 end
