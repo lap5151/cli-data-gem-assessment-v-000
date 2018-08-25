@@ -11,7 +11,7 @@ class Scraper
     results.each do |r|
      restaurants << r
    end
-   restaurants
+   puts restaurants
     binding.pry
   end
 
