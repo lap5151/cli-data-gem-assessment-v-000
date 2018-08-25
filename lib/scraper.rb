@@ -4,7 +4,7 @@ require 'pry'
 
 class Scraper
 
-def 
+def
   open('https://www.tripadvisor.com/').read =~ /17701/
   binding.pry
 end
