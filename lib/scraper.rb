@@ -4,9 +4,9 @@ require 'pry'
 
 class Scraper
 
-def
-  open('https://www.tripadvisor.com/').read =~ /17701/
-  binding.pry
-end
+  def self.scrape_index_page(index_url = https://www.tripadvisor.com/)
+    website = Nokogiri::HTML(open(index_url))
+    binding.pry
+  end
 
 end
